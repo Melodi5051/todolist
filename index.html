@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <title>TodoList</title>
+  </head>
+  <body>
+    <div class="mainBlock">
+      <div class="mainBlock-title"><h1>TodoList</h1></div>
+      <div class="content-wrapper">
+        <div class="todoList">
+          <ul class="todoList-items">
+            <!-- Отображение списка ЗАДАЧ -->
+          </ul>
+        </div>
+        <div class="formTodo">
+          <form class="addTodoForm">
+            <div class="addTodoForm-header">
+                <input class="inputTitle" type="text" name="" placeholder="Add new Todo...">
+                <button class="btnAddTodo">Add Todo</button>
+            </div>
+            <div class="addTodoForm-selectedTodos">
+                <input class="select-even" type="checkbox">
+                <input class="select-uneven" type="checkbox">
+            </div>
+          </form>
+          <button class="btnFirstDelete">Delete first item</button>
+          <button class="btnLastDelete">Delete last item</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script/index.js"></script>
+  </body>
+</html>
