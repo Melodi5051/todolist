@@ -160,6 +160,9 @@ const doneToDo = (event) => {
         const parent = event.target.closest('.todoList-items__item')
         const idElemtn = parent.textContent[0]
         todos[+idElemtn - 1].status = !todos[+idElemtn - 1].status
+        let elemnt = todos[+idElemtn - 1]
+        todos = todos.filter((value, index) => index !== +idElemtn - 1)
+        todos.push(elemnt)
         renderTodoList(todos)
     }
 }
