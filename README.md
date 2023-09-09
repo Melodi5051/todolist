@@ -8,6 +8,6 @@ CSS
 JavaScript
 (все на ванильных технологиях)
 
-В качестве дизайна брал референс с https://www.figma.com/file/8zmpquTcrExVLvlNWUG7gc/Planner-2.0-(Community)?node-id=14%3A844&mode=dev данного дизайна
+В качестве дизайна брал референс с https://www.figma.com/file/8zmpquTcrExVLvlNWUG7gc/Planner-2.0-(Community)?type=design&node-id=12-57&mode=design&t=DTrzFpil9SNTB21u-0 данного дизайна
 ==================================================================
 Данная версия не является конечно, и будет дальше улучшаться
