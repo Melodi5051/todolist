@@ -161,9 +161,15 @@ const doneToDo = (event) => {
         const idElemtn = parent.textContent[0]
         todos[+idElemtn - 1].status = !todos[+idElemtn - 1].status
         let elemnt = todos[+idElemtn - 1]
-        todos = todos.filter((value, index) => index !== +idElemtn - 1)
-        todos.push(elemnt)
-        renderTodoList(todos)
+        if(todos[+idElemtn - 1].status) {
+            todos = todos.filter((value, index) => index !== +idElemtn - 1)
+            todos.push(elemnt)
+            renderTodoList(todos)
+        }else{
+            todos = todos.filter((value, index) => index !== +idElemtn - 1)
+            todos.unshift(elemnt)
+            renderTodoList(todos)
+        }
     }
 }
 list.addEventListener('click', removeToDo)
